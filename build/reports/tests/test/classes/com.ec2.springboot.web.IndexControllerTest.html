@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.ec2.springboot.web.IndexControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.ec2.springboot.web.IndexControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.ec2.springboot.web.html">com.ec2.springboot.web</a> &gt; IndexControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.567s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="메인페이지_로딩"></a>
+<h3 class="failures">메인페이지_로딩</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 
+Expecting:
+ &lt;&quot;&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;스프링부트 웹서비스&lt;/title&gt;
+    &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;LEO-EC2-TEST&lt;/h1&gt;
+    &lt;div class=&quot;col-md-12&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-6&quot;&gt;
+                &lt;a href=&quot;/posts/save&quot; role=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;글 등록&lt;/a&gt;
+                    &lt;a href=&quot;/oauth2/authorization/google&quot; class=&quot;btn btn-success active&quot; role=&quot;button&quot;&gt;Google Login&lt;/a&gt;
+                    &lt;a href=&quot;/oauth2/authorization/naver&quot; class=&quot;btn btn-secondary active&quot; role=&quot;button&quot;&gt;Naver Login&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;br&gt;
+        &lt;!-- 목록 출력 영역 --&gt;
+        &lt;table class=&quot;table table-horizontal table-bordered&quot;&gt;
+            &lt;thead class=&quot;thead-strong&quot;&gt;
+            &lt;tr&gt;
+                &lt;th&gt;게시글번호&lt;/th&gt;
+                &lt;th&gt;제목&lt;/th&gt;
+                &lt;th&gt;작성자&lt;/th&gt;
+                &lt;th&gt;최종수정일&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody id=&quot;tbody&quot;&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+
+&lt;script src=&quot;https://code.jquery.com/jquery-3.3.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!--index.js 추가--&gt;
+&lt;script src=&quot;/js/app/index.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;&quot;&gt;
+to contain:
+ &lt;&quot;스프링부트로 시작하는 웹 서비스&quot;&gt; 
+	at com.ec2.springboot.web.IndexControllerTest.메인페이지_로딩(IndexControllerTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:750)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">메인페이지_로딩</td>
+<td class="failures">0.567s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[2m2022-11-13 18:12:30.870?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ec2.springboot.web.IndexControllerTest], using SpringBootContextLoader
+?[2m2022-11-13 18:12:30.871?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.t.c.support.AbstractContextLoader   ?[0;39m ?[2m:?[0;39m Could not detect default resource locations for test class [com.ec2.springboot.web.IndexControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+?[2m2022-11-13 18:12:30.872?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mt.c.s.AnnotationConfigContextLoaderUtils?[0;39m ?[2m:?[0;39m Could not detect default configuration classes for test class [com.ec2.springboot.web.IndexControllerTest]: IndexControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+?[2m2022-11-13 18:12:30.874?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Found @SpringBootConfiguration com.ec2.springboot.Application for test class com.ec2.springboot.web.IndexControllerTest
+?[2m2022-11-13 18:12:30.876?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+?[2m2022-11-13 18:12:30.878?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.b.t.c.SpringBootTestContextBootstrapper?[0;39m ?[2m:?[0;39m Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2a43dec9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@50932ea, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@69b82be5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@73055683, org.springframework.test.context.support.DirtiesContextTestExecutionListener@47847bbc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@bd68fc4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@23197a58, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@7af191f6, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@1ecc4c8f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@215b583d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@49f83df4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3ff07b1c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@43a4f059, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3845d2a0]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+?[32m :: Spring Boot :: ?[39m      ?[2m (v2.1.9.RELEASE)?[0;39m
+
+?[2m2022-11-13 18:12:30.988?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mc.e.springboot.web.IndexControllerTest  ?[0;39m ?[2m:?[0;39m Starting IndexControllerTest on DESKTOP-CIJC9VE with PID 6832 (started by KB캐피탈 in C:\github\leo_ec2_test)
+?[2m2022-11-13 18:12:30.992?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mc.e.springboot.web.IndexControllerTest  ?[0;39m ?[2m:?[0;39m The following profiles are active: oauth
+?[2m2022-11-13 18:12:31.587?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Bootstrapping Spring Data repositories in DEFAULT mode.
+?[2m2022-11-13 18:12:31.648?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Finished Spring Data repository scanning in 61ms. Found 2 repository interfaces.
+?[2m2022-11-13 18:12:31.836?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mtrationDelegate$BeanPostProcessorChecker?[0;39m ?[2m:?[0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ac622ffc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+?[2m2022-11-13 18:12:32.758?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.b.w.embedded.tomcat.TomcatWebServer ?[0;39m ?[2m:?[0;39m Tomcat initialized with port(s): 0 (http)
+?[2m2022-11-13 18:12:32.831?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.apache.catalina.core.StandardService  ?[0;39m ?[2m:?[0;39m Starting service [Tomcat]
+?[2m2022-11-13 18:12:32.832?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.apache.catalina.core.StandardEngine ?[0;39m ?[2m:?[0;39m Starting Servlet engine: [Apache Tomcat/9.0.26]
+?[2m2022-11-13 18:12:33.315?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.a.c.c.C.[Tomcat].[localhost].[/]      ?[0;39m ?[2m:?[0;39m Initializing Spring embedded WebApplicationContext
+?[2m2022-11-13 18:12:33.315?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.web.context.ContextLoader           ?[0;39m ?[2m:?[0;39m Root WebApplicationContext: initialization completed in 2318 ms
+?[2m2022-11-13 18:12:33.953?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-2 - Starting...
+?[2m2022-11-13 18:12:34.078?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-2 - Start completed.
+?[2m2022-11-13 18:12:34.208?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.hibernate.jpa.internal.util.LogHelper ?[0;39m ?[2m:?[0;39m HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+?[2m2022-11-13 18:12:34.228?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration boolean -&gt; org.hibernate.type.BooleanType@12808b1b
+?[2m2022-11-13 18:12:34.228?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration boolean -&gt; org.hibernate.type.BooleanType@12808b1b
+?[2m2022-11-13 18:12:34.228?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.lang.Boolean -&gt; org.hibernate.type.BooleanType@12808b1b
+?[2m2022-11-13 18:12:34.230?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration numeric_boolean -&gt; org.hibernate.type.NumericBooleanType@2fb01cf
+?[2m2022-11-13 18:12:34.233?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration true_false -&gt; org.hibernate.type.TrueFalseType@59cc0a00
+?[2m2022-11-13 18:12:34.234?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration yes_no -&gt; org.hibernate.type.YesNoType@15327d20
+?[2m2022-11-13 18:12:34.235?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration byte -&gt; org.hibernate.type.ByteType@5c73d3da
+?[2m2022-11-13 18:12:34.235?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration byte -&gt; org.hibernate.type.ByteType@5c73d3da
+?[2m2022-11-13 18:12:34.235?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.lang.Byte -&gt; org.hibernate.type.ByteType@5c73d3da
+?[2m2022-11-13 18:12:34.236?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration character -&gt; org.hibernate.type.CharacterType@4f834434
+?[2m2022-11-13 18:12:34.236?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration char -&gt; org.hibernate.type.CharacterType@4f834434
+?[2m2022-11-13 18:12:34.236?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.lang.Character -&gt; org.hibernate.type.CharacterType@4f834434
+?[2m2022-11-13 18:12:34.237?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration short -&gt; org.hibernate.type.ShortType@2041a264
+?[2m2022-11-13 18:12:34.237?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration short -&gt; org.hibernate.type.ShortType@2041a264
+?[2m2022-11-13 18:12:34.237?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.lang.Short -&gt; org.hibernate.type.ShortType@2041a264
+?[2m2022-11-13 18:12:34.237?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration integer -&gt; org.hibernate.type.IntegerType@48e55f92
+?[2m2022-11-13 18:12:34.237?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration int -&gt; org.hibernate.type.IntegerType@48e55f92
+?[2m2022-11-13 18:12:34.237?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.lang.Integer -&gt; org.hibernate.type.IntegerType@48e55f92
+?[2m2022-11-13 18:12:34.237?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration long -&gt; org.hibernate.type.LongType@43d6cb77
+?[2m2022-11-13 18:12:34.237?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration long -&gt; org.hibernate.type.LongType@43d6cb77
+?[2m2022-11-13 18:12:34.237?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.lang.Long -&gt; org.hibernate.type.LongType@43d6cb77
+?[2m2022-11-13 18:12:34.238?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration float -&gt; org.hibernate.type.FloatType@ee88f04
+?[2m2022-11-13 18:12:34.238?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration float -&gt; org.hibernate.type.FloatType@ee88f04
+?[2m2022-11-13 18:12:34.238?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.lang.Float -&gt; org.hibernate.type.FloatType@ee88f04
+?[2m2022-11-13 18:12:34.238?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration double -&gt; org.hibernate.type.DoubleType@23fe5db4
+?[2m2022-11-13 18:12:34.238?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration double -&gt; org.hibernate.type.DoubleType@23fe5db4
+?[2m2022-11-13 18:12:34.239?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.lang.Double -&gt; org.hibernate.type.DoubleType@23fe5db4
+?[2m2022-11-13 18:12:34.239?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration big_decimal -&gt; org.hibernate.type.BigDecimalType@239db49f
+?[2m2022-11-13 18:12:34.239?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.math.BigDecimal -&gt; org.hibernate.type.BigDecimalType@239db49f
+?[2m2022-11-13 18:12:34.239?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration big_integer -&gt; org.hibernate.type.BigIntegerType@52fa7a07
+?[2m2022-11-13 18:12:34.239?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.math.BigInteger -&gt; org.hibernate.type.BigIntegerType@52fa7a07
+?[2m2022-11-13 18:12:34.239?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration string -&gt; org.hibernate.type.StringType@4c1c0cc
+?[2m2022-11-13 18:12:34.239?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.lang.String -&gt; org.hibernate.type.StringType@4c1c0cc
+?[2m2022-11-13 18:12:34.239?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration nstring -&gt; org.hibernate.type.StringNVarcharType@2cfe9ef
+?[2m2022-11-13 18:12:34.239?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration ncharacter -&gt; org.hibernate.type.CharacterNCharType@3c602c65
+?[2m2022-11-13 18:12:34.240?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration url -&gt; org.hibernate.type.UrlType@6af736a6
+?[2m2022-11-13 18:12:34.240?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.net.URL -&gt; org.hibernate.type.UrlType@6af736a6
+?[2m2022-11-13 18:12:34.240?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration Duration -&gt; org.hibernate.type.DurationType@2ab31376
+?[2m2022-11-13 18:12:34.240?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.time.Duration -&gt; org.hibernate.type.DurationType@2ab31376
+?[2m2022-11-13 18:12:34.241?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration Instant -&gt; org.hibernate.type.InstantType@4423e3f8
+?[2m2022-11-13 18:12:34.241?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.time.Instant -&gt; org.hibernate.type.InstantType@4423e3f8
+?[2m2022-11-13 18:12:34.241?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration LocalDateTime -&gt; org.hibernate.type.LocalDateTimeType@3890d590
+?[2m2022-11-13 18:12:34.241?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.time.LocalDateTime -&gt; org.hibernate.type.LocalDateTimeType@3890d590
+?[2m2022-11-13 18:12:34.241?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration LocalDate -&gt; org.hibernate.type.LocalDateType@778f6d6b
+?[2m2022-11-13 18:12:34.241?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.time.LocalDate -&gt; org.hibernate.type.LocalDateType@778f6d6b
+?[2m2022-11-13 18:12:34.241?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration LocalTime -&gt; org.hibernate.type.LocalTimeType@4a92547
+?[2m2022-11-13 18:12:34.241?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.time.LocalTime -&gt; org.hibernate.type.LocalTimeType@4a92547
+?[2m2022-11-13 18:12:34.241?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration OffsetDateTime -&gt; org.hibernate.type.OffsetDateTimeType@230e1bec
+?[2m2022-11-13 18:12:34.242?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.time.OffsetDateTime -&gt; org.hibernate.type.OffsetDateTimeType@230e1bec
+?[2m2022-11-13 18:12:34.245?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration OffsetTime -&gt; org.hibernate.type.OffsetTimeType@4728796f
+?[2m2022-11-13 18:12:34.246?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.time.OffsetTime -&gt; org.hibernate.type.OffsetTimeType@4728796f
+?[2m2022-11-13 18:12:34.246?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration ZonedDateTime -&gt; org.hibernate.type.ZonedDateTimeType@4ff3ba41
+?[2m2022-11-13 18:12:34.246?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.time.ZonedDateTime -&gt; org.hibernate.type.ZonedDateTimeType@4ff3ba41
+?[2m2022-11-13 18:12:34.249?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration date -&gt; org.hibernate.type.DateType@6828d197
+?[2m2022-11-13 18:12:34.249?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.sql.Date -&gt; org.hibernate.type.DateType@6828d197
+?[2m2022-11-13 18:12:34.249?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration time -&gt; org.hibernate.type.TimeType@14d0a7d5
+?[2m2022-11-13 18:12:34.249?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.sql.Time -&gt; org.hibernate.type.TimeType@14d0a7d5
+?[2m2022-11-13 18:12:34.249?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration timestamp -&gt; org.hibernate.type.TimestampType@74c1f765
+?[2m2022-11-13 18:12:34.249?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.sql.Timestamp -&gt; org.hibernate.type.TimestampType@74c1f765
+?[2m2022-11-13 18:12:34.249?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.util.Date -&gt; org.hibernate.type.TimestampType@74c1f765
+?[2m2022-11-13 18:12:34.249?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration dbtimestamp -&gt; org.hibernate.type.DbTimestampType@7d6f6487
+?[2m2022-11-13 18:12:34.250?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration calendar -&gt; org.hibernate.type.CalendarType@2d38629
+?[2m2022-11-13 18:12:34.250?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.util.Calendar -&gt; org.hibernate.type.CalendarType@2d38629
+?[2m2022-11-13 18:12:34.250?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.util.GregorianCalendar -&gt; org.hibernate.type.CalendarType@2d38629
+?[2m2022-11-13 18:12:34.250?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration calendar_date -&gt; org.hibernate.type.CalendarDateType@556b67d7
+?[2m2022-11-13 18:12:34.250?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration locale -&gt; org.hibernate.type.LocaleType@b9b8edd
+?[2m2022-11-13 18:12:34.251?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.util.Locale -&gt; org.hibernate.type.LocaleType@b9b8edd
+?[2m2022-11-13 18:12:34.251?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration currency -&gt; org.hibernate.type.CurrencyType@1677545b
+?[2m2022-11-13 18:12:34.251?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.util.Currency -&gt; org.hibernate.type.CurrencyType@1677545b
+?[2m2022-11-13 18:12:34.252?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration timezone -&gt; org.hibernate.type.TimeZoneType@c7316e1
+?[2m2022-11-13 18:12:34.252?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.util.TimeZone -&gt; org.hibernate.type.TimeZoneType@c7316e1
+?[2m2022-11-13 18:12:34.252?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration class -&gt; org.hibernate.type.ClassType@76198e13
+?[2m2022-11-13 18:12:34.252?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.lang.Class -&gt; org.hibernate.type.ClassType@76198e13
+?[2m2022-11-13 18:12:34.252?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration uuid-binary -&gt; org.hibernate.type.UUIDBinaryType@4fd46e06
+?[2m2022-11-13 18:12:34.252?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.util.UUID -&gt; org.hibernate.type.UUIDBinaryType@4fd46e06
+?[2m2022-11-13 18:12:34.252?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration uuid-char -&gt; org.hibernate.type.UUIDCharType@1e2b9ff6
+?[2m2022-11-13 18:12:34.252?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration binary -&gt; org.hibernate.type.BinaryType@4a6b0008
+?[2m2022-11-13 18:12:34.252?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration byte[] -&gt; org.hibernate.type.BinaryType@4a6b0008
+?[2m2022-11-13 18:12:34.252?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration [B -&gt; org.hibernate.type.BinaryType@4a6b0008
+?[2m2022-11-13 18:12:34.253?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration wrapper-binary -&gt; org.hibernate.type.WrapperBinaryType@3f992a12
+?[2m2022-11-13 18:12:34.253?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration Byte[] -&gt; org.hibernate.type.WrapperBinaryType@3f992a12
+?[2m2022-11-13 18:12:34.253?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration [Ljava.lang.Byte; -&gt; org.hibernate.type.WrapperBinaryType@3f992a12
+?[2m2022-11-13 18:12:34.253?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration row_version -&gt; org.hibernate.type.RowVersionType@20ae99a
+?[2m2022-11-13 18:12:34.253?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration image -&gt; org.hibernate.type.ImageType@5c7ca032
+?[2m2022-11-13 18:12:34.253?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration characters -&gt; org.hibernate.type.CharArrayType@7c6434b4
+?[2m2022-11-13 18:12:34.253?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration char[] -&gt; org.hibernate.type.CharArrayType@7c6434b4
+?[2m2022-11-13 18:12:34.253?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration [C -&gt; org.hibernate.type.CharArrayType@7c6434b4
+?[2m2022-11-13 18:12:34.253?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration wrapper-characters -&gt; org.hibernate.type.CharacterArrayType@430c508f
+?[2m2022-11-13 18:12:34.254?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration [Ljava.lang.Character; -&gt; org.hibernate.type.CharacterArrayType@430c508f
+?[2m2022-11-13 18:12:34.254?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration Character[] -&gt; org.hibernate.type.CharacterArrayType@430c508f
+?[2m2022-11-13 18:12:34.254?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration text -&gt; org.hibernate.type.TextType@56c596a5
+?[2m2022-11-13 18:12:34.254?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration ntext -&gt; org.hibernate.type.NTextType@792db9ff
+?[2m2022-11-13 18:12:34.254?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration blob -&gt; org.hibernate.type.BlobType@1cee873e
+?[2m2022-11-13 18:12:34.254?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.sql.Blob -&gt; org.hibernate.type.BlobType@1cee873e
+?[2m2022-11-13 18:12:34.254?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration materialized_blob -&gt; org.hibernate.type.MaterializedBlobType@31814353
+?[2m2022-11-13 18:12:34.254?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration clob -&gt; org.hibernate.type.ClobType@2b4aba21
+?[2m2022-11-13 18:12:34.255?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.sql.Clob -&gt; org.hibernate.type.ClobType@2b4aba21
+?[2m2022-11-13 18:12:34.255?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration nclob -&gt; org.hibernate.type.NClobType@76679527
+?[2m2022-11-13 18:12:34.255?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.sql.NClob -&gt; org.hibernate.type.NClobType@76679527
+?[2m2022-11-13 18:12:34.255?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration materialized_clob -&gt; org.hibernate.type.MaterializedClobType@2ae38e84
+?[2m2022-11-13 18:12:34.255?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration materialized_nclob -&gt; org.hibernate.type.MaterializedNClobType@35dc2fef
+?[2m2022-11-13 18:12:34.255?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration serializable -&gt; org.hibernate.type.SerializableType@6844c53d
+?[2m2022-11-13 18:12:34.255?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration object -&gt; org.hibernate.type.ObjectType@48d978ae
+?[2m2022-11-13 18:12:34.255?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration java.lang.Object -&gt; org.hibernate.type.ObjectType@48d978ae
+?[2m2022-11-13 18:12:34.255?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration imm_date -&gt; org.hibernate.type.AdaptedImmutableType@6f353839
+?[2m2022-11-13 18:12:34.255?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration imm_time -&gt; org.hibernate.type.AdaptedImmutableType@3bca92aa
+?[2m2022-11-13 18:12:34.256?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration imm_timestamp -&gt; org.hibernate.type.AdaptedImmutableType@79dfa683
+?[2m2022-11-13 18:12:34.256?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration imm_dbtimestamp -&gt; org.hibernate.type.AdaptedImmutableType@353cce5d
+?[2m2022-11-13 18:12:34.256?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration imm_calendar -&gt; org.hibernate.type.AdaptedImmutableType@730ecc33
+?[2m2022-11-13 18:12:34.256?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration imm_calendar_date -&gt; org.hibernate.type.AdaptedImmutableType@1c3e4f3a
+?[2m2022-11-13 18:12:34.256?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration imm_binary -&gt; org.hibernate.type.AdaptedImmutableType@18510980
+?[2m2022-11-13 18:12:34.256?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.BasicTypeRegistry    ?[0;39m ?[2m:?[0;39m Adding type registration imm_serializable -&gt; org.hibernate.type.AdaptedImmutableType@4bcc62f1
+?[2m2022-11-13 18:12:34.364?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.dialect.Dialect           ?[0;39m ?[2m:?[0;39m HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+?[2m2022-11-13 18:12:34.400?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.h.type.spi.TypeConfiguration$Scope    ?[0;39m ?[2m:?[0;39m Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4e902d77] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@1807788c]
+?[2m2022-11-13 18:12:34.437?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.EnumType             ?[0;39m ?[2m:?[0;39m Using NAMED-based conversion for Enum com.ec2.springboot.domain.user.Role
+?[2m2022-11-13 18:12:34.567?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.EnumType             ?[0;39m ?[2m:?[0;39m Using NAMED-based conversion for Enum com.ec2.springboot.domain.user.Role
+?[2m2022-11-13 18:12:34.650?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.h.type.spi.TypeConfiguration$Scope    ?[0;39m ?[2m:?[0;39m Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4e902d77] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@214a8998]
+?[2m2022-11-13 18:12:34.651?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.EnumType             ?[0;39m ?[2m:?[0;39m Using NAMED-based conversion for Enum com.ec2.springboot.domain.user.Role
+?[2m2022-11-13 18:12:34.652?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.EnumType             ?[0;39m ?[2m:?[0;39m Using NAMED-based conversion for Enum com.ec2.springboot.domain.user.Role
+?[2m2022-11-13 18:12:34.654?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.EnumType             ?[0;39m ?[2m:?[0;39m Using NAMED-based conversion for Enum com.ec2.springboot.domain.user.Role
+?[2m2022-11-13 18:12:34.654?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.EnumType             ?[0;39m ?[2m:?[0;39m Using NAMED-based conversion for Enum com.ec2.springboot.domain.user.Role
+?[2m2022-11-13 18:12:34.662?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.EnumType             ?[0;39m ?[2m:?[0;39m Using NAMED-based conversion for Enum com.ec2.springboot.domain.user.Role
+?[2m2022-11-13 18:12:34.664?[0;39m ?[32mDEBUG?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36morg.hibernate.type.EnumType             ?[0;39m ?[2m:?[0;39m Using NAMED-based conversion for Enum com.ec2.springboot.domain.user.Role
+?[2m2022-11-13 18:12:34.688?[0;39m ?[32mTRACE?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.h.type.spi.TypeConfiguration$Scope    ?[0;39m ?[2m:?[0;39m Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@214a8998] for TypeConfiguration
+?[2m2022-11-13 18:12:34.690?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mj.LocalContainerEntityManagerFactoryBean?[0;39m ?[2m:?[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+?[2m2022-11-13 18:12:35.640?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.h.h.i.QueryTranslatorFactoryInitiator ?[0;39m ?[2m:?[0;39m HHH000397: Using ASTQueryTranslatorFactory
+?[2m2022-11-13 18:12:36.011?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.s.web.DefaultSecurityFilterChain    ?[0;39m ?[2m:?[0;39m Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61ed247e, org.springframework.security.web.context.SecurityContextPersistenceFilter@30a59376, org.springframework.security.web.header.HeaderWriterFilter@217bde4b, org.springframework.security.web.authentication.logout.LogoutFilter@1f1a4f5f, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5fb52b76, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3b0f91ef, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@338426d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2fe551b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a9962f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c5f8997, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@597d31a8, org.springframework.security.web.session.SessionManagementFilter@163d24bd, org.springframework.security.web.access.ExceptionTranslationFilter@721834f1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@a7887d5]
+?[2m2022-11-13 18:12:36.559?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.s.concurrent.ThreadPoolTaskExecutor ?[0;39m ?[2m:?[0;39m Initializing ExecutorService 'applicationTaskExecutor'
+?[2m2022-11-13 18:12:36.591?[0;39m ?[33m WARN?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36maWebConfiguration$JpaWebMvcConfiguration?[0;39m ?[2m:?[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+?[2m2022-11-13 18:12:36.646?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.b.a.w.s.WelcomePageHandlerMapping   ?[0;39m ?[2m:?[0;39m Adding welcome page template: index
+?[2m2022-11-13 18:12:37.420?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36ms.a.ScheduledAnnotationBeanPostProcessor?[0;39m ?[2m:?[0;39m No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+?[2m2022-11-13 18:12:37.469?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mo.s.b.w.embedded.tomcat.TomcatWebServer ?[0;39m ?[2m:?[0;39m Tomcat started on port(s): 49849 (http) with context path ''
+?[2m2022-11-13 18:12:37.470?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[    Test worker]?[0;39m ?[36mc.e.springboot.web.IndexControllerTest  ?[0;39m ?[2m:?[0;39m Started IndexControllerTest in 6.588 seconds (JVM running for 30.872)
+?[2m2022-11-13 18:12:37.698?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[o-auto-1-exec-2]?[0;39m ?[36mo.a.c.c.C.[Tomcat].[localhost].[/]      ?[0;39m ?[2m:?[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+?[2m2022-11-13 18:12:37.698?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[o-auto-1-exec-2]?[0;39m ?[36mo.s.web.servlet.DispatcherServlet       ?[0;39m ?[2m:?[0;39m Initializing Servlet 'dispatcherServlet'
+?[2m2022-11-13 18:12:37.736?[0;39m ?[32m INFO?[0;39m ?[35m6832?[0;39m ?[2m---?[0;39m ?[2m[o-auto-1-exec-2]?[0;39m ?[36mo.s.web.servlet.DispatcherServlet       ?[0;39m ?[2m:?[0;39m Completed initialization in 38 ms
+Hibernate: 
+    select
+        posts0_.id as id1_0_,
+        posts0_.created_date as created_2_0_,
+        posts0_.modified_date as modified3_0_,
+        posts0_.author as author4_0_,
+        posts0_.content as content5_0_,
+        posts0_.title as title6_0_ 
+    from
+        posts posts0_ 
+    order by
+        posts0_.id DESC
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at 2022. 11. 13 오후 6:12:40</p>
+</div>
+</div>
+</body>
+</html>
