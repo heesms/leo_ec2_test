@@ -10,5 +10,9 @@
 * AWS EC2 / MYSQL
 * OAuth2 Google, Naver
 * Mustache
+* Travis-CI
 
 ### 테스트 진행중.
+
+### 퍼블릭 DNS
+http://ec2-3-35-94-19.ap-northeast-2.compute.amazonaws.com:8080/
