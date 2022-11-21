@@ -1,29 +1,17 @@
-REPOSITORY=/app/step1
+#!/bin/bash
+
+REPOSITORY=/home/ec2-user/app/step2
 PROJECT_NAME=leo_ec2_test
 
-cd $REPOSITORY/$PROJECT_NAME/
+echo "> Build 파일 복사"
 
-echo "> git pull"
+cp $REPOSITORY/zip/*.jar $REPOSITORY/
 
-git pull
+echo "> 현재 구동중인 애플리케이션 pid 확인"
 
-echo "> build start"
+CURRENT_PID=$(pgrep -fl freelec-springboot2-webservice | grep jar | awk '{print $1}')
 
-./gradlew build
-
-echo "> go step1"
-
-cd $REPOSITORY
-
-echo "> copy build file"
-
-cp $REPOSITORY/$PROJECT_NAME/build/libs/*.jar $REPOSITORY/
-
-echo "> check pid"
-
-CURRENT_PID=$(pgrep -f $PROJECT_NAME.*.jar)
-
-echo "running pid: $CURRENT_PID"
+echo "현재 구동중인 어플리케이션 pid: $CURRENT_PID"
 
 if [ -z "$CURRENT_PID" ]; then
     echo "> 현재 구동중인 애플리케이션이 없으므로 종료하지 않습니다."
@@ -35,7 +23,7 @@ fi
 
 echo "> 새 어플리케이션 배포"
 
-JAR_NAME=$(ls -tr $REPOSITORY/ | grep jar | tail -n 1)
+JAR_NAME=$(ls -tr $REPOSITORY/*.jar | tail -n 1)
 
 echo "> JAR Name: $JAR_NAME"
 
