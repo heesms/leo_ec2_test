@@ -11,6 +11,7 @@
 * OAuth2 Google, Naver
 * Mustache
 * Travis-CI, S3, CodeDeploy
+* NGINX for CD
 
 ### 테스트 진행중.
 
