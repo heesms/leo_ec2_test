@@ -10,7 +10,7 @@
 * AWS EC2 / MYSQL
 * OAuth2 Google, Naver
 * Mustache
-* Travis-CI
+* Travis-CI, S3, CodeDeploy
 
 ### 테스트 진행중.
 
